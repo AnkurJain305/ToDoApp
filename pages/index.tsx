@@ -17,6 +17,9 @@ export default function Home() {
     {
       alert('Number is displayed in ToDo App')
     }
+    if(todo==="world"){
+      alert("This is todoapp")
+    }
    }, [todo])
 
 
