@@ -17,6 +17,9 @@ export default function Home() {
     {
       alert('Number is displayed in ToDo App')
     }
+    if(todo==="ankur"){
+      alert("this is todo app")
+    }
    }, [todo])
 
 
