@@ -7,20 +7,20 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [todo, setToDo]= useState ('')
+  const [to, setToDo]= useState ('')
   useEffect(()=>{
-    if(todo==='Hello')
+    if(to==='Hello')
     {
       alert('Welcome To ToDo App')
     }
-    if(todo==='100')
+    if(to==='100')
     {
       alert('Number is displayed in ToDo App')
     }
-    if(todo==="world"){
+    if(to==="world"){
       alert("This is todoapp")
     }
-   }, [todo])
+   }, [to])
 
 
   // useEffect(()=>{
@@ -39,10 +39,10 @@ export default function Home() {
         <h1>ToDo App</h1>
         <h2>
         {
-          todo
+          to
         }
         </h2>
-        <input placeholder='add todo' type="text" value={todo} onChange={e=> setToDo(e.target.value)}/> 
+        <input placeholder='add todo' type="text" value={to} onChange={e=> setToDo(e.target.value)}/> 
         <button> submit </button>
       </div>
     </>
