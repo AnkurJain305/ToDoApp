@@ -13,6 +13,10 @@ export default function Home() {
     {
       alert('Welcome To ToDo App')
     }
+    if(todo==='100')
+    {
+      alert('Number is displayed in ToDo App')
+    }
    }, [todo])
 
 
@@ -35,7 +39,7 @@ export default function Home() {
           todo
         }
         </h2>
-        <input placeholder='add todo' type="text" value={todo} onChange={e=> setToDo(e.target.value)}/>
+        <input placeholder='add todo' type="text" value={todo} onChange={e=> setToDo(e.target.value)}/> 
         <button> submit </button>
       </div>
     </>
